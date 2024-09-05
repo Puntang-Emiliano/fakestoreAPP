@@ -1,0 +1,83 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AppFakeStore
+build_property.ProjectDir = C:\Users\Usuario\Desktop\AppFakeStore\AppFakeStore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/Views/AcercaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.Views.AcercaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AcercaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AcercaPage.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/Views/DetalleUsuarioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.Views.DetalleUsuarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetalleUsuarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetalleUsuarioPage.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/Views/ProductoDetallePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.Views.ProductoDetallePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductoDetallePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductoDetallePage.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/Views/ProductoListaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.Views.ProductoListaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductoListaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductoListaPage.xaml
+
+[C:/Users/Usuario/Desktop/AppFakeStore/AppFakeStore/Views/UsuarioViewPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppFakeStore.Views.UsuarioViewPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UsuarioViewPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UsuarioViewPage.xaml

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFakeStore.Views.LoginPage"
+             Title="{Binding Title}">
+    <!-- Define the background as a stronger yellow gradient -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFC107" Offset="0.0" />
+            <GradientStop Color="#FFA000" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid RowDefinitions="0.3*, 0.7*">
+        <!-- Top section with logo -->
+        <Grid BackgroundColor="White" Opacity="0.9">
+            <Image Aspect="AspectFit" Source="login.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Grid>
+
+        <!-- Bottom section with form -->
+        <Grid Grid.Row="1" BackgroundColor="White" Opacity="0.9">
+            <RoundRectangle Margin="-15,-5,-15,-2"
+                            CornerRadius="30,30,0,0"
+                            Fill="White"/>
+            <VerticalStackLayout Margin="30,0,30,0">
+                <Label FontAttributes="Bold"
+                       FontFamily="Medium"
+                       Text="Bienvenido"
+                       FontSize="Large"
+                       TextColor="#333333"
+                       HorizontalOptions="Center"/>
+
+                <Label FontFamily="Medium"
+                       Text="Inicie sesión a continuación"
+                       FontSize="Small"
+                       TextColor="#a3a3a4"
+                       HorizontalOptions="Center"/>
+
+                <!-- Username Entry -->
+                <Grid Margin="0,20,0,0" ColumnDefinitions="0.15*, 0.85*">
+                    <Image Source="email_icon.png" 
+                           VerticalOptions="Center"
+                           HeightRequest="30"
+                           WidthRequest="30"
+                           HorizontalOptions="Start"/>
+                    <Entry x:Name="UsernameEntry"
+                           Grid.Column="1"
+                           Placeholder="Correo electrónico"
+                           VerticalOptions="Center"
+                           BackgroundColor="White"
+                           TextColor="#333333"
+                           HeightRequest="50"
+                           FontSize="Medium"
+                           Margin="10,0,0,0"/>
+                </Grid>
+
+                <!-- Password Entry -->
+                <Grid Margin="0,20,0,0" ColumnDefinitions="0.15*, 0.85*">
+                    <Image Source="password_icon.png"
+                           VerticalOptions="Center"
+                           HeightRequest="30"
+                           WidthRequest="30"
+                           HorizontalOptions="Start"/>
+                    <Entry x:Name="PasswordEntry"
+                           Grid.Column="1"
+                           Placeholder="Contraseña"
+                           IsPassword="True"
+                           VerticalOptions="Center"
+                           BackgroundColor="White"
+                           TextColor="#333333"
+                           HeightRequest="50"
+                           FontSize="Medium"
+                           Margin="10,0,0,0"/>
+                </Grid>
+
+                <!-- Login Button -->
+                <Button x:Name="LoginButton"
+                    Margin="0,20,0,0"
+                    BackgroundColor="#FFD600"
+                    HeightRequest="50"
+                    Text="Iniciar sesión"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    Clicked="OnLoginButtonClicked" />
+
+                <ActivityIndicator x:Name="LoadingIndicator" 
+                                   IsVisible="False" 
+                                   Color="Black" 
+                                   IsRunning="False" />
+
+                <!-- Forgot Password -->
+                <Label Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       Text="¿Olvidaste tu contraseña?"
+                       TextColor="Blue"
+                       TextDecorations="Underline"/>
+
+                <!-- Sign Up Button -->
+                <Button
+                    Margin="0,30,0,0"
+                    BackgroundColor="White"
+                    BorderColor="#FFD600"
+                    BorderWidth="2"
+                    HeightRequest="50"
+                    Text="Crear cuenta"
+                    TextColor="Black"
+                    CornerRadius="25"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

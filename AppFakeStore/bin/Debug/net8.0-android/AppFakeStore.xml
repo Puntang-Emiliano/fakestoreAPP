@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppFakeStore</name>
+    </assembly>
+    <members>
+        <member name="T:AppFakeStore.ViewModels.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:AppFakeStore.ViewModels.BaseViewModel.isBusy"/>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:AppFakeStore.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="T:AppFakeStore.ViewModels.DetalleUsuarioViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.DetalleUsuarioViewModel.Usuario">
+            <inheritdoc cref="F:AppFakeStore.ViewModels.DetalleUsuarioViewModel.usuario"/>
+        </member>
+        <member name="F:AppFakeStore.ViewModels.DetalleUsuarioViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:AppFakeStore.ViewModels.DetalleUsuarioViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.DetalleUsuarioViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppFakeStore.ViewModels.DetalleUsuarioViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="T:AppFakeStore.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:AppFakeStore.ViewModels.MainViewModel.goToProductoListaCommand">
+            <summary>The backing field for <see cref="P:AppFakeStore.ViewModels.MainViewModel.GoToProductoListaCommand"/>.</summary>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.MainViewModel.GoToProductoListaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppFakeStore.ViewModels.MainViewModel.GoToProductoLista"/>.</summary>
+        </member>
+        <member name="F:AppFakeStore.ViewModels.MainViewModel.goToAcercaCommand">
+            <summary>The backing field for <see cref="P:AppFakeStore.ViewModels.MainViewModel.GoToAcercaCommand"/>.</summary>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.MainViewModel.GoToAcercaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppFakeStore.ViewModels.MainViewModel.GoToAcerca"/>.</summary>
+        </member>
+        <member name="F:AppFakeStore.ViewModels.MainViewModel.goToUsuariosCommand">
+            <summary>The backing field for <see cref="P:AppFakeStore.ViewModels.MainViewModel.GoToUsuariosCommand"/>.</summary>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.MainViewModel.GoToUsuariosCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppFakeStore.ViewModels.MainViewModel.GoToUsuarios"/>.</summary>
+        </member>
+        <member name="F:AppFakeStore.ViewModels.MainViewModel.exitCommand">
+            <summary>The backing field for <see cref="P:AppFakeStore.ViewModels.MainViewModel.ExitCommand"/>.</summary>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.MainViewModel.ExitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppFakeStore.ViewModels.MainViewModel.Exit"/>.</summary>
+        </member>
+        <member name="T:AppFakeStore.ViewModels.ProductoDetalleViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.ProductoDetalleViewModel.Producto">
+            <inheritdoc cref="F:AppFakeStore.ViewModels.ProductoDetalleViewModel.producto"/>
+        </member>
+        <member name="F:AppFakeStore.ViewModels.ProductoDetalleViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:AppFakeStore.ViewModels.ProductoDetalleViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.ProductoDetalleViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppFakeStore.ViewModels.ProductoDetalleViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="T:AppFakeStore.ViewModels.ProductoListaViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.ProductoListaViewModel.IsRefreshing">
+            <inheritdoc cref="F:AppFakeStore.ViewModels.ProductoListaViewModel.isRefreshing"/>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.ProductoListaViewModel.ProductoSeleccionado">
+            <inheritdoc cref="F:AppFakeStore.ViewModels.ProductoListaViewModel.productoSeleccionado"/>
+        </member>
+        <member name="F:AppFakeStore.ViewModels.ProductoListaViewModel.getProductosCommand">
+            <summary>The backing field for <see cref="P:AppFakeStore.ViewModels.ProductoListaViewModel.GetProductosCommand"/>.</summary>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.ProductoListaViewModel.GetProductosCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppFakeStore.ViewModels.ProductoListaViewModel.GetProductosAsync"/>.</summary>
+        </member>
+        <member name="F:AppFakeStore.ViewModels.ProductoListaViewModel.goToDetailCommand">
+            <summary>The backing field for <see cref="P:AppFakeStore.ViewModels.ProductoListaViewModel.GoToDetailCommand"/>.</summary>
+        </member>
+        <member name="P:AppFakeStore.ViewModels.ProductoListaViewModel.GoToDetailCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppFakeStore.ViewModels.ProductoListaViewModel.GoToDetail"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Usuario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Usuario" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Producto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Producto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProductoSeleccionado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProductoSeleccionado" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Usuario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Usuario" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Producto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Producto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProductoSeleccionado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProductoSeleccionado" generated properties.</summary>
+        </member>
+    </members>
+</doc>

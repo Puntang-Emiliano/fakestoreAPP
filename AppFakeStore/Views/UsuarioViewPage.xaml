@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:AppFakeStore.ViewModels"
+             x:Class="AppFakeStore.Views.UsuarioViewPage"
+             Title="Lista de Usuarios"
+             BackgroundColor="White">
+
+    <ContentPage.BindingContext>
+        <viewModels:UsuarioListaViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <ActivityIndicator x:Name="LoadingIndicator"
+                           IsRunning="{Binding IsLoading}"
+                           IsVisible="{Binding IsLoading}"
+                           Color="#FFDB15" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HeightRequest="50" />
+
+            <ScrollView IsVisible="{Binding IsDataLoaded}">
+            <CollectionView ItemsSource="{Binding Usuarios}">
+                <!--//SelectionChanged ="OnSelectionChanged" >-->
+                <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                        <Frame CornerRadius="10" Padding="10" Margin="10" HasShadow="True" BackgroundColor= "#FFDB15">
+                                <Grid ColumnDefinitions="0.3*,0.7*" RowDefinitions="Auto,Auto" ColumnSpacing="10">
+                                    <Image Grid.Column="0"
+                                       Source="usuario.png" 
+                                       HeightRequest="70"
+                                       Aspect="AspectFit"
+                                       VerticalOptions="Center"/>
+
+                                    <StackLayout Grid.Column="1" Spacing="5">
+                                        <Label Text="{Binding name.firstname}" 
+                                           FontSize="20" 
+                                           FontAttributes="Bold" 
+                                           TextColor="Black" />
+
+                                        <Label Text="{Binding name.lastname}" 
+                                           FontSize="18" 
+                                           TextColor="#333333" />
+
+                                        <Label Text="{Binding email}" 
+                                           FontSize="14" 
+                                           TextColor="#888888" />
+
+                                        <Label Text="{Binding phone}" 
+                                           FontSize="16" 
+                                           TextColor="Black" />
+
+                                        <Label Text="{Binding address.city}" 
+                                           FontSize="16" 
+                                           TextColor="#666666" />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+    </Grid>
+</ContentPage>

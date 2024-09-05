@@ -1,0 +1,1 @@
+C:\Users\Usuario\Desktop\AppFakeStore\AppFakeStore\AppFakeStore.csproj;x64
