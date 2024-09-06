@@ -6,7 +6,7 @@
              Title="{Binding Title}"
              x:Class="AppFakeStore.MainPage"
              BackgroundColor="#FFD600">
-    <!-- Mercado Libre yellow background -->
+
 
     <ScrollView Margin="10">
         <VerticalStackLayout>

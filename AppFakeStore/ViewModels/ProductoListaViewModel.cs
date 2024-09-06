@@ -35,7 +35,6 @@ public partial class ProductoListaViewModel : BaseViewModel
             {
                 IsBusy = true;
 
-                // consultamos lista de productos
                 var productos = await _productoService.GetProductsAsync();
 
                 if (productos != null)

@@ -28,7 +28,7 @@ namespace AppFakeStore.ViewModels
 
             try
             {
-                var response = await _httpClient.PostAsJsonAsync(loginUrl, loginData); //METODO POST utilizando HttpClient en .NET para enviar datos en formato JSON a un endpoint.
+                var response = await _httpClient.PostAsJsonAsync(loginUrl, loginData); 
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -38,13 +38,13 @@ namespace AppFakeStore.ViewModels
                 }
                 else
                 {
-                    // Manejar error de autenticación
+                   
                     return false;
                 }
             }
             catch (Exception ex)
             {
-                // Manejo de errores, por ejemplo, conexión fallida
+                
                 Console.WriteLine(ex.Message);
                 return false;
             }

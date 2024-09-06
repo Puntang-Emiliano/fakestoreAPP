@@ -17,7 +17,7 @@ namespace AppFakeStore.Views
         {
             if (sender is Entry entry)
             {
-                // Verifica si el texto es igual al placeholder para limpiar el campo
+                
                 if (entry.Text == GetPlaceholder(entry))
                 {
                     entry.Text = string.Empty;
@@ -29,7 +29,7 @@ namespace AppFakeStore.Views
         {
             if (sender is Entry entry && string.IsNullOrWhiteSpace(entry.Text))
             {
-                // Restablece el placeholder si el campo está vacío
+               
                 entry.Text = GetPlaceholder(entry);
             }
         }

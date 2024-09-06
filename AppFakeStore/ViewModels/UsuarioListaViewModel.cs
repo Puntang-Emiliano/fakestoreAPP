@@ -13,7 +13,6 @@ namespace AppFakeStore.ViewModels
         public ObservableCollection<Usuarios> Usuarios { get; set; } = new ObservableCollection<Usuarios>();
 
 
-        //PROPIEDAD DEL INDICADOR DE CARGA
         private bool _isLoading;
         public bool IsLoading
         {

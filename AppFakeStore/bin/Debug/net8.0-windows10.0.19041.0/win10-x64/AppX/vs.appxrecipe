@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\Usuario\Desktop\AppFakeStore\AppFakeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-05T23:41:50.684</Modified>
+      <Modified>2024-09-06T20:59:13.943</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\AppFakeStore\AppFakeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppFakeStore.dll">
       <PackagePath>AppFakeStore.dll</PackagePath>
-      <Modified>2024-09-05T23:41:49.182</Modified>
+      <Modified>2024-09-06T20:59:12.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\AppFakeStore\AppFakeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppFakeStore.exe</PackagePath>
-      <Modified>2024-09-05T23:41:49.242</Modified>
+      <Modified>2024-09-06T20:59:12.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\AppFakeStore\AppFakeStore\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
