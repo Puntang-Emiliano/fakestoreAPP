@@ -5,10 +5,13 @@
              x:Class="AppFakeStore.Views.DetalleUsuarioViewPage"
              Title="Detalle Usuario"
              BackgroundColor="#FEE600">
- 
+
+    <ContentPage.BindingContext>
+        <viewModels:DetalleUsuarioViewModel />
+    </ContentPage.BindingContext>
+
     <ScrollView>
         <StackLayout Padding="20">
-          
             <Grid ColumnDefinitions="0.6*,0.4*" RowDefinitions="Auto" ColumnSpacing="20" Padding="10,0">
                 <Image Grid.Column="0"
                        Source="usuario.png" 
@@ -20,43 +23,27 @@
                        Aspect="AspectFit"/>
             </Grid>
 
-
             <Frame BackgroundColor="White" CornerRadius="10" Padding="20" HasShadow="True">
                 <StackLayout Spacing="20">
-             
                     <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto" Padding="5,0">
                         <Label Text="Nombre:" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
-                        <Label Text="{Binding name.firstname}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
+                        <Label Text="{Binding Usuario.name.firstname}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
                     </Grid>
-
-           
                     <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto" Padding="5,0">
                         <Label Text="Email:" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
-                        <Label Text="{Binding email}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
+                        <Label Text="{Binding Usuario.email}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
                     </Grid>
-
-                  
                     <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto" Padding="5,0">
                         <Label Text="Teléfono:" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
-                        <Label Text="{Binding phone}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
+                        <Label Text="{Binding Usuario.phone}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
                     </Grid>
-
-                    
                     <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto" Padding="5,0">
                         <Label Text="Dirección:" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
-                        <Label Text="{Binding Direccion}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
+                        <Label Text="{Binding Usuario.address.street}, {Binding Usuario.address.city}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
                     </Grid>
-
-                   
-                    <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto" Padding="5,0">
-                        <Label Text="Ciudad:" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
-                        <Label Text="{Binding address.city}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
-                    </Grid>
-
-       
                     <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto" Padding="5,0">
                         <Label Text="Código postal:" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
-                        <Label Text="{Binding address.zipcode}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
+                        <Label Text="{Binding Usuario.address.zipcode}" FontSize="16" Grid.Column="1" VerticalOptions="Center"/>
                     </Grid>
                 </StackLayout>
             </Frame>

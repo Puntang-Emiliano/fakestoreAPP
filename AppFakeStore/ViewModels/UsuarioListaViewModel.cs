@@ -27,7 +27,7 @@ namespace AppFakeStore.ViewModels
             set => SetProperty(ref _isDataLoaded, value);
         }
 
-      
+
 
         public UsuarioListaViewModel()
         {
@@ -48,7 +48,7 @@ namespace AppFakeStore.ViewModels
             }
 
             IsLoading = false;
-            IsDataLoaded = true; 
+            IsDataLoaded = true;
         }
     }
 }

@@ -1,10 +1,17 @@
-//namespace AppFakeStore.Views;
+using AppFakeStore.Models;
+using AppFakeStore.ViewModels;
 
-//public partial class DetalleUsuarioPage : ContentPage
-//{
-//    public DetalleUsuarioPage(Usuarios usuarioSeleccionado)
-//    {
-//        InitializeComponent();
-        
-//    }
-//}
+namespace AppFakeStore.Views
+{
+    public partial class DetalleUsuarioViewPage : ContentPage
+    {
+        public DetalleUsuarioViewPage(Usuarios usuario)
+        {
+            InitializeComponent();
+
+            var viewModel = new DetalleUsuarioViewModel();
+            viewModel.Initialize(usuario);
+            BindingContext = viewModel;
+        }
+    }
+}

@@ -1,29 +1,25 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AppFakeStore.Models;
 
 namespace AppFakeStore.ViewModels
 {
-    public partial class DetalleUsuarioViewModel : BaseViewModel
+    public partial class DetalleUsuarioViewModel : ObservableObject
     {
-        [ObservableProperty]
-        Usuarios usuario;
+        private Usuarios _usuario;
+
+        public Usuarios Usuario
+        {
+            get => _usuario;
+            set => SetProperty(ref _usuario, value);
+        }
 
         public DetalleUsuarioViewModel()
         {
-            Title = "Detalle de Usuario";
         }
 
-        [RelayCommand]
-        private async Task GoBack()
+        public void Initialize(Usuarios usuario)
         {
-            await Application.Current.MainPage.Navigation.PopAsync();
+            Usuario = usuario;
         }
-
-
     }
 }

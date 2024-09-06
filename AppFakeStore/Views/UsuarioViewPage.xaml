@@ -19,46 +19,48 @@
                            VerticalOptions="Center"
                            HeightRequest="50" />
 
-            <ScrollView IsVisible="{Binding IsDataLoaded}">
-            <CollectionView ItemsSource="{Binding Usuarios}">
-             
+        <ScrollView IsVisible="{Binding IsDataLoaded}">
+            <CollectionView ItemsSource="{Binding Usuarios}"
+                            SelectionMode="Single"
+                            SelectionChanged="OnSelectionChanged">  <!--//ACA ME DIRIGE A EL DETTALLE PERO DESDE EL CEL NO-->
+
                 <CollectionView.ItemTemplate>
-                        <DataTemplate>
+                    <DataTemplate>
                         <Frame CornerRadius="10" Padding="10" Margin="10" HasShadow="True" BackgroundColor= "#FFDB15">
-                                <Grid ColumnDefinitions="0.3*,0.7*" RowDefinitions="Auto,Auto" ColumnSpacing="10">
-                                    <Image Grid.Column="0"
+                            <Grid ColumnDefinitions="0.3*,0.7*" RowDefinitions="Auto,Auto" ColumnSpacing="10">
+                                <Image Grid.Column="0"
                                        Source="usuario.png" 
                                        HeightRequest="70"
                                        Aspect="AspectFit"
                                        VerticalOptions="Center"/>
 
-                                    <StackLayout Grid.Column="1" Spacing="5">
-                                        <Label Text="{Binding name.firstname}" 
+                                <StackLayout Grid.Column="1" Spacing="5">
+                                    <Label Text="{Binding name.firstname}" 
                                            FontSize="20" 
                                            FontAttributes="Bold" 
                                            TextColor="Black" />
 
-                                        <Label Text="{Binding name.lastname}" 
+                                    <Label Text="{Binding name.lastname}" 
                                            FontSize="18" 
                                            TextColor="#333333" />
 
-                                        <Label Text="{Binding email}" 
+                                    <Label Text="{Binding email}" 
                                            FontSize="14" 
                                            TextColor="#888888" />
 
-                                        <Label Text="{Binding phone}" 
+                                    <Label Text="{Binding phone}" 
                                            FontSize="16" 
                                            TextColor="Black" />
 
-                                        <Label Text="{Binding address.city}" 
+                                    <Label Text="{Binding address.city}" 
                                            FontSize="16" 
                                            TextColor="#666666" />
-                                    </StackLayout>
-                                </Grid>
-                            </Frame>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </ScrollView>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
     </Grid>
 </ContentPage>
